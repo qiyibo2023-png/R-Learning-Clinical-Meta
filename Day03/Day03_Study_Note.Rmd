@@ -1,0 +1,58 @@
+---
+title: "Day03_Study_Note"
+author: "Yibo Qi"
+date: "2026-05-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Day03 Learning Diary
+## Today's Study Info
+- Study Duration: 40 minutes
+- Module: Factor variable, logical subsetting, basic statistics
+
+## Core Knowledge Points
+1. 'factor()' converts character vector into categorical variable for grouping.
+2. 'levels()' checks category labels of a factor.
+3. Use logical condition '> < >= <= == &' to subset data.
+4. Square bracket '[]' can filter elements by condition.
+5. Basic stats: 'mean()', 'sd()', 'min()', 'max()' for descriptive analysis.
+
+## Runable R Code Today
+```{r}
+# ==== Day03 Factor & Logical Subset ====
+
+# 1. Character vector
+group <- c("Control", "Clinical", "Control", "Clinical", "Clinical")
+
+# 2. Convert to Factor
+group_factor <- factor(group)
+
+# 3. Check Factor Level
+group_factor
+levels(group_factor)
+
+# 4. Filter Numeric Vectors
+score <- c(25, 33, 41, 28, 35)
+
+# 5. Logical Subset
+score > 30
+score[score > 30] # Filter scores greater than 30
+
+# 6. Filter scores greater than 30
+score[score >= 28 & score <= 38]
+ 
+# 7. Group Filtering by Factors
+score[group_factor == "Clinical"]
+score[group_factor == "Control"]
+
+# 8. Basic Statistical Functions
+mean(score)
+sd(score)
+min(score)
+max(score)
+```
+
