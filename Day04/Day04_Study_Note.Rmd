@@ -1,0 +1,60 @@
+---
+title: "Day04_Study_Note"
+author: "Yibo Qi"
+date: "2026-05-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Day04_Study_Note
+## Today's Study Info
+- Study Duration: 40 minutes
+- Module: Data fame creation, data view, row & column extraction, data filter
+
+## Core Knowledge Points
+1. 'data.frame()' combine different vectors into standard research dataset.
+2. Use '$' to extract single column variable quickly.
+3. 'head()' check top rows, 'str()'inspect data structure.
+4. '[row, column]' to locate specific data position.
+5. Filter whole dataset by logical condition for subgroup analysis.
+6. Can add new calculated column directly to data frame.
+
+## Runable R Code Today
+```{r}
+# ==== Day04 Data Frame ====
+
+# 1.Construct simulated data for psychological experiments
+id <- 1:6 # Subject ID
+gender <- c("F", "M", "F", "M", "F", "M") # Gender
+age <- c(22,25,23,24,26,21) # Age
+dep_score <- c(18,27,15,32,20,29) # Depression Score
+anx_score <- c(12,22,10,25,14,23) # Anxiety Score
+
+# 2.Combine into a data frame
+psy_data <- data.frame(id, gender, age, dep_score, anx_score)
+
+# 3.View data as a whole
+psy_data
+head(psy_data) # View the first few rows
+str(psy_data) # View data structure
+
+# 4.Extract data by column
+psy_data$age
+psy_data$dep_score
+
+# 5.Retrieve values by rows and columns
+psy_data[2, ] # Extract all data from the second row
+psy_data[ ,4] # Extract all data from the 4th column
+psy_data[3,5] # Single value in the 3rd row and 5th column
+
+# 6.Filter table data by conditions
+male_data <- psy_data[psy_data$gender=="M",] # Screen male participants
+high_dep <- psy_data[psy_data$dep_score > 25, ] # Screen out people with depression scores higher than 25 points
+
+# 7.Add a new column of variables
+psy_data$total_score <- psy_data$dep_score + psy_data$anx_score
+```
+
