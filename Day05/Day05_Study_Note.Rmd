@@ -1,0 +1,59 @@
+---
+title: "Day05_Study_Note"
+author: "Yibo Qi"
+date: "2026-05-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Day05 R Learning Diary
+## Today's Study Info
+- Study Duration: 40 minutes
+- Module: Package installation, library load, working directory, CSV & Excel data import
+
+## Core Knowledge Points
+1. 'install.packages()' install new functional packages.
+2. 'library()' activate installed packages before use.
+3. 'getwd()' check current file path, 'setwd()' set target folder.
+4. 'readr' package is stable for CSV file reading an writing.
+5. 'redxl' package supports direct reading Excel spreadsheet data.
+6. Built-in dataset 'iris' is widely used for statistical pratice.
+
+## Runable R Code Today
+```{r}
+# ==== Day05 Package & External Data Import ====
+
+# 1. Check working directory
+getwd()
+
+# 2. Set working directory
+# setwd("Your local folder path")
+
+# 3. Install packages
+install.packages("readr") # Efficient Reading and Writing of CSV Files
+install.packages("readxl") # Read Excel files
+
+# 4. Load packages
+library(readr)
+library(readxl)
+
+# 5. Practice with built-in datasets
+data(iris)
+head(iris)
+str(iris)
+
+# 6. Simulate exporting data as CSV
+psy_data <- iris
+write_csv(psy_data, "Psychology_Score_Data.csv")
+
+# 7. Read CSV files
+csv_data <- read_csv("Psychology_Score_Data.csv")
+
+# 8. Read Excel spreadsheet Import Excel 
+# excel_data <- read_excel("Your_Data.xlsx")
+
+```
+
