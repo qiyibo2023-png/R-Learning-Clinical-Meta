@@ -15,10 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 - Module: Data fame creation, data view, row & column extraction, data filter
 
 ## Core Knowledge Points
-1. 'data.frame()' combine different vectors into standard research dataset.
-2. Use '$' to extract single column variable quickly.
-3. 'head()' check top rows, 'str()'inspect data structure.
-4. '[row, column]' to locate specific data position.
+1. `data.frame()` combine different vectors into standard research dataset.
+2. Use `$` to extract single column variable quickly.
+3. `head()` check top rows, 'str()'inspect data structure.
+4. `[row, column]` to locate specific data position.
 5. Filter whole dataset by logical condition for subgroup analysis.
 6. Can add new calculated column directly to data frame.
 
