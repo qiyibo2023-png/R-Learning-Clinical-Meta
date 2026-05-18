@@ -15,12 +15,12 @@ knitr::opts_chunk$set(echo = TRUE)
 - Module: R vector creation, indexing, slicing, seq() & rep()
 
 ## Core Knowledge Points
-1. Use 'c()' to combine elements into a vector.
-2. Use '[]' for indexing and subsetting vector elements.
+1. Use `c()` to combine elements into a vector.
+2. Use `[]` for indexing and subsetting vector elements.
 3. Vector can do overall arithmetic operation with a number.
-4. 'seq(from, to, by)' generates regular numeric sequence.
-5. 'rep(x, times)' repeats elements easily.
-6. 'length()' checks how many elements in a vector.
+4. `seq(from, to, by)` generates regular numeric sequence.
+5. `rep(x, times)` repeats elements easily.
+6. `length()` checks how many elements in a vector.
 
 ## Runable R Code Today
 
