@@ -15,11 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 - Module: Package installation, library load, working directory, CSV & Excel data import
 
 ## Core Knowledge Points
-1. 'install.packages()' install new functional packages.
-2. 'library()' activate installed packages before use.
-3. 'getwd()' check current file path, 'setwd()' set target folder.
-4. 'readr' package is stable for CSV file reading an writing.
-5. 'redxl' package supports direct reading Excel spreadsheet data.
+1. `install.packages()` install new functional packages.
+2. `library()` activate installed packages before use.
+3. `getwd()` check current file path, 'setwd()' set target folder.
+4. `readr` package is stable for CSV file reading an writing.
+5. `redxl` package supports direct reading Excel spreadsheet data.
 6. Built-in dataset 'iris' is widely used for statistical pratice.
 
 ## Runable R Code Today
