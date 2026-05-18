@@ -15,11 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 - Module: Factor variable, logical subsetting, basic statistics
 
 ## Core Knowledge Points
-1. 'factor()' converts character vector into categorical variable for grouping.
-2. 'levels()' checks category labels of a factor.
-3. Use logical condition '> < >= <= == &' to subset data.
-4. Square bracket '[]' can filter elements by condition.
-5. Basic stats: 'mean()', 'sd()', 'min()', 'max()' for descriptive analysis.
+1. `factor()` converts character vector into categorical variable for grouping.
+2. `levels()` checks category labels of a factor.
+3. Use logical condition `> < >= <= == &` to subset data.
+4. Square bracket `[]` can filter elements by condition.
+5. Basic stats: `mean()`, `sd()`, `min()`, `max()` for descriptive analysis.
 
 ## Runable R Code Today
 ```{r}
